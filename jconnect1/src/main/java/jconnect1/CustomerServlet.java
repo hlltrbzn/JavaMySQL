@@ -7,9 +7,9 @@ public class CustomerServlet {
 
     public static void main(String[] args) {
         try {
-            String jsonInputString = "{\"name\":\"John Doe\", \"age\":30}"; // Gönderilecek JSON verisi
+            String jsonInputString = "{\"name\":\"John Doe\", \"age\":30}"; 
 
-            URL url = new URL("http://localhost:3306/mydatabase"); // API URL
+            URL url = new URL("http://localhost:3306/mydatabase"); 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Content-Type", "application/json; utf-8");
